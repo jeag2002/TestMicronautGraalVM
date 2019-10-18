@@ -1,0 +1,38 @@
+GENERACION micronaut:
+
+Definir
+
+Windows SDK 7.1 C:\Program Files\Microsoft SDKs\Windows\v7.1\Bin\SetEnv.cmd
+GraalVM 19.2.0.1 Windows  D:\workspaces\binaries_noprogram\graalvm-ee-19.2.0.1
+Micronaut 1.2.1 D:\workspaces\runtimes\micronaut-1.2.1\bin
+
+(crea un proyecto micronaut con soporte graal;)
+mn create-app rtb.server.graal --features=graal-native-image
+
+(arrancar con run.bat)
+
+URLS:
+===================================================================================================================
+
+https://medium.com/liferay-engineering-brazil/setting-up-your-microservice-with-micronaut-fc3e2d6322cd
+https://github.com/eugenp/tutorials/tree/master/micronaut
+https://medium.com/liferay-engineering-brazil/setting-up-your-microservice-with-micronaut-fc3e2d6322cd
+https://dev.to/skhmt/creating-a-native-executable-in-windows-with-graalvm-3g7f
+C:\Program Files\Microsoft SDKs\Windows\v7.1
+https://github.com/oracle/graal/issues/1258
+https://jonathangiles.net/natively-compiling-micronaut-microservices-using-graalvm-for-insanely-faster-startups/
+
+===================================================================================================================
+
+
+Modify java.security issue:
+https://www.ibm.com/support/pages/rqmcopyutility-error-ssltls-sslcontext-not-available-certificate-does-not-conform-algorithm-constraints
+
+https://jazz.net/forum/questions/217913/how-to-avoid-javasecuritynosuchalgorithmexception-ssl_tls-sslcontext-not-available-if-we-use-java-8
+
+MIRAR ESTO:
+https://jonathangiles.net/natively-compiling-micronaut-microservices-using-graalvm-for-insanely-faster-startups/
+
+https://github.com/oracle/graal/issues/951
+https://gist.github.com/azadkuh/8957917
+

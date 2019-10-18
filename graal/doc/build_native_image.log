@@ -1,0 +1,67 @@
+Executing [
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\bin\java.exe \
+-XX:+UnlockExperimentalVMOptions \
+-XX:+EnableJVMCI \
+-Dtruffle.TrustAllTruffleRuntimeProviders=true \
+-Dtruffle.TruffleRuntime=com.oracle.truffle.api.impl.DefaultTruffleRuntime \
+-Dgraalvm.ForcePolyglotInvalid=true \
+-Dgraalvm.locatorDisabled=true \
+-d64 \
+-XX:-UseJVMCIClassLoader \
+-XX:-UseJVMCICompiler \
+-Xss10m \
+-Xms1g \
+-Xmx13621624832 \
+-Duser.country=US \
+-Duser.language=en \
+-Dorg.graalvm.version=dev \
+-Dorg.graalvm.config= \
+-Dcom.oracle.graalvm.isaot=true \
+-Djvmci.class.path.append=D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\graal.jar \
+-Djava.library.path=D:/workspaces/binaries_noprogram/graalvm-ce-19.1.1/jre/lib/svm/clibraries/windows-amd64/ \
+-Xbootclasspath/a:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\boot\graal-sdk.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\boot\graaljs-scriptengine.jar \
+-cp \
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\graal-llvm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\javacpp.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\llvm-platform-specific.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\llvm-wrapper.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\objectfile.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\pointsto.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\svm-llvm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\svm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\graal-management.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\graal.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\jvmci-api.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\jvmci-hotspot.jar \
+com.oracle.svm.hosted.NativeImageGeneratorRunner \
+-imagecp \
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\boot\graal-sdk.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\boot\graaljs-scriptengine.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\graal-llvm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\javacpp.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\llvm-platform-specific.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\llvm-wrapper.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\objectfile.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\pointsto.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\svm-llvm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\builder\svm.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\graal-management.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\graal.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\jvmci-api.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\jvmci\jvmci-hotspot.jar;D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\library-support.jar;D:\workspaces\workEclipseMicronauts\graal\build\libs\graal-0.1-all.jar \
+-H:Path=D:\workspaces\workEclipseMicronauts\graal \
+-H:ReflectionConfigurationResources=META-INF/native-image/io.netty/transport/reflection-config.json \
+-H:ClassInitialization=io.netty.handler.codec.http.HttpObjectEncoder:run_time,io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder:run_time \
+-H:IncludeResources=META-INF/http/mime.types \
+-H:EnableURLProtocols=http,https \
+-H:ReflectionConfigurationResources=META-INF/native-image/io.micronaut/http/reflection-config.json \
+-H:ClassInitialization=io.netty.handler.codec.http.HttpObjectEncoder:run_time,io.netty.handler.codec.http.websocketx.WebSocket00FrameEncoder:run_time,io.netty.handler.ssl.util.ThreadLocalInsecureRandom:run_time,com.sun.jndi.dns.DnsClient:run_time,io.netty.handler.ssl.ConscryptAlpnSslEngine:run_time,io.netty.handler.ssl.JettyNpnSslEngine:run_time,io.netty.handler.ssl.ReferenceCountedOpenSslEngine:run_time,io.netty.handler.ssl.JdkNpnApplicationProtocolNegotiator:run_time,io.netty.handler.ssl.ReferenceCountedOpenSslServerContext:run_time,io.netty.handler.ssl.ReferenceCountedOpenSslClientContext:run_time,io.netty.handler.ssl.util.BouncyCastleSelfSignedCertGenerator:run_time,io.netty.handler.ssl.ReferenceCountedOpenSslContext:run_time \
+-H:ClassInitialization=io.netty:build_time \
+-H:ReflectionConfigurationResources=META-INF/native-image/io.micronaut/http-netty-channel/reflection-config.json \
+-H:ClassInitialization=io.micronaut.reactive.reactor.ReactorInstrumentation:run_time \
+-H:ClassInitialization=ch.qos.logback:build_time,com.fasterxml.jackson:build_time,io.micronaut:build_time,io.reactivex:build_time,org.reactivestreams:build_time,org.slf4j:build_time,org.yaml.snakeyaml:build_time,javax:build_time \
+-H:ReflectionConfigurationResources=META-INF/native-image/io.micronaut/health/reflection-config.json \
+-H:IncludeResources=logback.xml|application.yml|bootstrap.yml \
+-H:IncludeResources=logback.xml|application.yml|META-INF/services/*.* \
+-H:Name=graal \
+-H:+ReportUnsupportedElementsAtRuntime \
+-H:+AllowVMInspection \
+-H:+ReportExceptionStackTraces \
+-H:+EnableAllSecurityServices \
+-H:+AllowIncompleteClasspath \
+-H:FallbackThreshold=0 \
+-H:ClassInitialization=io.netty.handler.ssl.JdkSslContext:run_time \
+-H:CLibraryPath=D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64 \
+-H:Class=graal.Application
+]
+[graal:11768]    classlist:   6,155.70 ms
+[graal:11768]        (cap):   1,882.48 ms
+[graal:11768]        setup:   2,801.30 ms
+[graal:11768]   (typeflow):  19,666.29 ms
+[graal:11768]    (objects):  18,585.38 ms
+[graal:11768]   (features):   2,706.35 ms
+[graal:11768]     analysis:  44,018.79 ms
+[graal:11768]     (clinit):     693.39 ms
+[graal:11768]     universe:   2,115.63 ms
+[graal:11768]      (parse):   2,727.13 ms
+[graal:11768]     (inline):   2,861.48 ms
+[graal:11768]    (compile):  22,466.82 ms
+[graal:11768]      compile:  30,638.29 ms
+[graal:11768]        image:   5,497.56 ms
+[graal:11768]        write:     468.96 ms

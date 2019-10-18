@@ -1,0 +1,144 @@
+Setting SDK environment relative to C:\Program Files\Microsoft SDKs\Windows\v7.1\.
+Targeting Windows 7 x64 Debug
+
+
+BUILD SUCCESSFUL in 1s
+10 actionable tasks: 10 up-to-date
+Fatal error: java.lang.RuntimeException: java.lang.RuntimeException: host C compiler or linker does not seem to work: java.lang.RuntimeException: returned 2
+
+Running command: CL /MD /Zi /PDBSTRIPPED /FeD:\workspaces\workEclipseMicronauts\graal\graal.exe C:\Users\jeag2\AppData\Local\Temp\SVM-9131945362327067669\graal.obj D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib /link /INCREMENTAL:NO /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:OLDNAMES /LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib /LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64 advapi32.lib ws2_32.lib secur32.lib iphlpapi.lib
+
+Microsoft (R) C/C++ Optimizing Compiler Version 16.00.30319.01 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '/PDBSTRIPPED'
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/debug
+/out:D:\workspaces\workEclipseMicronauts\graal\graal.exe
+/INCREMENTAL:NO /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:OLDNAMES
+/LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib
+/LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64
+advapi32.lib
+ws2_32.lib
+secur32.lib
+iphlpapi.lib
+C:\Users\jeag2\AppData\Local\Temp\SVM-9131945362327067669\graal.obj
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib
+   Creating library D:\workspaces\workEclipseMicronauts\graal\graal.lib and object D:\workspaces\workEclipseMicronauts\graal\graal.exp
+graal.obj : error LNK2001: unresolved external symbol Java_sun_reflect_Reflection_getCallerClass
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDHKeyAgreement_deriveKey
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDSASignature_signDigest
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDSASignature_verifySignedDigest
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECKeyPairGenerator_generateECKeyPair
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECKeyPairGenerator_isCurveSupported
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_krb5_Config_getWindowsDirectory
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_krb5_SCDynamicStoreConfig_getKerberosConfig
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_smartcardio_PCSC_SCardEstablishContext
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_GetClassContext referenced in function Java_java_lang_SecurityManager_getClassContext
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_CurrentLoadedClass referenced in function Java_java_lang_SecurityManager_currentLoadedClass0
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_CurrentClassLoader referenced in function Java_java_lang_SecurityManager_currentClassLoader0
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_ClassDepth referenced in function Java_java_lang_SecurityManager_classDepth
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_ClassLoaderDepth referenced in function Java_java_lang_SecurityManager_classLoaderDepth0
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_FindSignal referenced in function Java_sun_misc_Signal_findSignal
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_RegisterSignal referenced in function Java_sun_misc_Signal_handle0
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_RaiseSignal referenced in function Java_sun_misc_Signal_raise0
+D:\workspaces\workEclipseMicronauts\graal\graal.exe : fatal error LNK1120: 17 unresolved externals
+
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at java.util.concurrent.ForkJoinTask.getThrowableException(ForkJoinTask.java:593)
+        at java.util.concurrent.ForkJoinTask.get(ForkJoinTask.java:1005)
+        at com.oracle.svm.hosted.NativeImageGenerator.run(NativeImageGenerator.java:457)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.buildImage(NativeImageGeneratorRunner.java:308)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.build(NativeImageGeneratorRunner.java:446)
+        at com.oracle.svm.hosted.NativeImageGeneratorRunner.main(NativeImageGeneratorRunner.java:112)
+Caused by: java.lang.RuntimeException: host C compiler or linker does not seem to work: java.lang.RuntimeException: returned 2
+
+Running command: CL /MD /Zi /PDBSTRIPPED /FeD:\workspaces\workEclipseMicronauts\graal\graal.exe C:\Users\jeag2\AppData\Local\Temp\SVM-9131945362327067669\graal.obj D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib /link /INCREMENTAL:NO /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:OLDNAMES /LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib /LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64 advapi32.lib ws2_32.lib secur32.lib iphlpapi.lib
+
+Microsoft (R) C/C++ Optimizing Compiler Version 16.00.30319.01 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+cl : Command line warning D9002 : ignoring unknown option '/PDBSTRIPPED'
+Microsoft (R) Incremental Linker Version 10.00.30319.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/debug
+/out:D:\workspaces\workEclipseMicronauts\graal\graal.exe
+/INCREMENTAL:NO /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:OLDNAMES
+/LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib
+/LIBPATH:D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64
+advapi32.lib
+ws2_32.lib
+secur32.lib
+iphlpapi.lib
+C:\Users\jeag2\AppData\Local\Temp\SVM-9131945362327067669\graal.obj
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\ffi.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\net.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\nio.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\java.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\libchelper.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\strictmath.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\svm\clibraries\windows-amd64\jvm.lib
+D:\workspaces\binaries_noprogram\graalvm-ce-19.1.1\jre\lib\zip.lib
+   Creating library D:\workspaces\workEclipseMicronauts\graal\graal.lib and object D:\workspaces\workEclipseMicronauts\graal\graal.exp
+graal.obj : error LNK2001: unresolved external symbol Java_sun_reflect_Reflection_getCallerClass
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDHKeyAgreement_deriveKey
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDSASignature_signDigest
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECDSASignature_verifySignedDigest
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECKeyPairGenerator_generateECKeyPair
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_ec_ECKeyPairGenerator_isCurveSupported
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_krb5_Config_getWindowsDirectory
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_krb5_SCDynamicStoreConfig_getKerberosConfig
+graal.obj : error LNK2001: unresolved external symbol Java_sun_security_smartcardio_PCSC_SCardEstablishContext
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_GetClassContext referenced in function Java_java_lang_SecurityManager_getClassContext
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_CurrentLoadedClass referenced in function Java_java_lang_SecurityManager_currentLoadedClass0
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_CurrentClassLoader referenced in function Java_java_lang_SecurityManager_currentClassLoader0
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_ClassDepth referenced in function Java_java_lang_SecurityManager_classDepth
+java.lib(SecurityManager.obj) : error LNK2019: unresolved external symbol JVM_ClassLoaderDepth referenced in function Java_java_lang_SecurityManager_classLoaderDepth0
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_FindSignal referenced in function Java_sun_misc_Signal_findSignal
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_RegisterSignal referenced in function Java_sun_misc_Signal_handle0
+java.lib(Signal.obj) : error LNK2019: unresolved external symbol JVM_RaiseSignal referenced in function Java_sun_misc_Signal_raise0
+D:\workspaces\workEclipseMicronauts\graal\graal.exe : fatal error LNK1120: 17 unresolved externals
+
+        at com.oracle.svm.hosted.image.NativeBootImageViaCC.write(NativeBootImageViaCC.java:343)
+        at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:653)
+        at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:440)
+        at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+        at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Error: Image build request failed with exit status 1
+com.oracle.svm.driver.NativeImage$NativeImageError: Image build request failed with exit status 1
+        at com.oracle.svm.driver.NativeImage.showError(NativeImage.java:1405)
+        at com.oracle.svm.driver.NativeImage.build(NativeImage.java:1183)
+        at com.oracle.svm.driver.NativeImage.performBuild(NativeImage.java:1145)
+        at com.oracle.svm.driver.NativeImage.main(NativeImage.java:1104)

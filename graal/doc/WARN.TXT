@@ -1,0 +1,66 @@
+Warning: Aborting stand-alone image build. Class initialization of io.netty.handler.ssl.JdkSslContext failed. Use the option --initialize-at-run-time=io.netty.handler.ssl.JdkSslContext to explicitly request delayed initialization of this class.
+Detailed message:
+
+com.oracle.svm.hosted.FallbackFeature$FallbackImageRequest: Aborting stand-alone image build. Class initialization of io.netty.handler.ssl.JdkSslContext failed. Use the option --initialize-at-run-time=io.netty.handler.ssl.JdkSslContext to explicitly request delayed initialization of this class.
+Detailed message:
+
+        at com.oracle.svm.hosted.FallbackFeature.reportFallback(FallbackFeature.java:208)
+        at com.oracle.svm.hosted.FallbackFeature.reportAsFallback(FallbackFeature.java:218)
+        at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:732)
+        at com.oracle.svm.hosted.NativeImageGenerator.doRun(NativeImageGenerator.java:522)
+        at com.oracle.svm.hosted.NativeImageGenerator.lambda$run$0(NativeImageGenerator.java:440)
+        at java.util.concurrent.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1386)
+        at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+        at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+        at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+        at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: com.oracle.graal.pointsto.constraints.UnsupportedFeatureException: Class initialization of io.netty.handler.ssl.JdkSslContext failed. Use the option --initialize-at-run-time=io.netty.handler.ssl.JdkSslContext to explicitly request delayed initialization of this class.
+Detailed message:
+
+        at com.oracle.graal.pointsto.constraints.UnsupportedFeatures.report(UnsupportedFeatures.java:130)
+        at com.oracle.graal.pointsto.BigBang.finish(BigBang.java:565)
+        at com.oracle.svm.hosted.NativeImageGenerator.runPointsToAnalysis(NativeImageGenerator.java:683)
+        ... 7 more
+Caused by: java.lang.Error: failed to initialize the default SSL context
+        at io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:76)
+        at sun.misc.Unsafe.ensureClassInitialized(Native Method)
+        at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.ensureClassInitialized(ConfigurableClassInitialization.java:129)
+        at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:371)
+        at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.computeInitKindAndMaybeInitializeClass(ConfigurableClassInitialization.java:92)
+        at com.oracle.svm.hosted.classinitialization.ConfigurableClassInitialization.maybeInitializeHosted(ConfigurableClassInitialization.java:120)
+        at com.oracle.svm.hosted.SVMHost.registerType(SVMHost.java:190)
+        at com.oracle.graal.pointsto.meta.AnalysisUniverse.createType(AnalysisUniverse.java:262)
+        at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookupAllowUnresolved(AnalysisUniverse.java:203)
+        at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookup(AnalysisUniverse.java:180)
+        at com.oracle.graal.pointsto.meta.AnalysisType.getSuperclass(AnalysisType.java:758)
+        at com.oracle.graal.pointsto.meta.AnalysisType.<init>(AnalysisType.java:167)
+        at com.oracle.graal.pointsto.meta.AnalysisUniverse.createType(AnalysisUniverse.java:261)
+        at com.oracle.graal.pointsto.meta.AnalysisUniverse.lookupAllowUnresolved(AnalysisUniverse.java:203)
+        at com.oracle.graal.pointsto.infrastructure.WrappedConstantPool.lookupType(WrappedConstantPool.java:155)
+        at org.graalvm.compiler.java.BytecodeParser.lookupType(BytecodeParser.java:4080)
+        at org.graalvm.compiler.java.BytecodeParser.genNewInstance(BytecodeParser.java:4330)
+        at org.graalvm.compiler.java.BytecodeParser.processBytecode(BytecodeParser.java:5118)
+        at org.graalvm.compiler.java.BytecodeParser.iterateBytecodesForBlock(BytecodeParser.java:3267)
+        at org.graalvm.compiler.java.BytecodeParser.processBlock(BytecodeParser.java:3074)
+        at org.graalvm.compiler.java.BytecodeParser.build(BytecodeParser.java:976)
+        at org.graalvm.compiler.java.BytecodeParser.buildRootMethod(BytecodeParser.java:870)
+        at org.graalvm.compiler.java.GraphBuilderPhase$Instance.run(GraphBuilderPhase.java:84)
+        at org.graalvm.compiler.phases.Phase.run(Phase.java:49)
+        at org.graalvm.compiler.phases.BasePhase.apply(BasePhase.java:197)
+        at org.graalvm.compiler.phases.Phase.apply(Phase.java:42)
+        at org.graalvm.compiler.phases.Phase.apply(Phase.java:38)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlowBuilder.parse(MethodTypeFlowBuilder.java:221)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlowBuilder.apply(MethodTypeFlowBuilder.java:340)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.doParse(MethodTypeFlow.java:310)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.ensureParsed(MethodTypeFlow.java:300)
+        at com.oracle.graal.pointsto.flow.MethodTypeFlow.addContext(MethodTypeFlow.java:107)
+        at com.oracle.graal.pointsto.flow.StaticInvokeTypeFlow.update(InvokeTypeFlow.java:346)
+        at com.oracle.graal.pointsto.BigBang$2.run(BigBang.java:510)
+        at com.oracle.graal.pointsto.util.CompletionExecutor.lambda$execute$0(CompletionExecutor.java:171)
+        at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+        ... 4 more
+Caused by: java.security.NoSuchAlgorithmException: TLS SSLContext not available
+        at sun.security.jca.GetInstance.getInstance(GetInstance.java:159)
+        at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+        at io.netty.handler.ssl.JdkSslContext.<clinit>(JdkSslContext.java:73)
+        ... 39 more
