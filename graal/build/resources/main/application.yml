@@ -1,0 +1,8 @@
+micronaut:
+  ssl: false
+  micronaut:
+   security: false
+  application:
+    name: graal
+  server:
+    port: 8082
