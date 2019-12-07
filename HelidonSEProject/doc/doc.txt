@@ -1,0 +1,2 @@
+https://blogs.oracle.com/javamagazine/helidon-a-simple-cloud-native-framework
+https://helidon.io/docs/latest/#/about/01_overview
